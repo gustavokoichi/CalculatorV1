@@ -5,11 +5,13 @@ MENU_DICT = {1: 'Sum', 2: 'Subtraction', 3: 'Multiply', 4: 'Division', 5: 'Power
 
 while True:
     choice = menu(MENU_DICT)
-    if choice == 7:
+    if choice == len(MENU_DICT):
+        print()
         print('LEAVING PROGRAM')
+        print()
         break
     for k, v in dict.items(MENU_DICT):
-        if choice == k and choice != 7:
+        if choice == k and choice != len(MENU_DICT):
             print(f'Your choose: {v}')
             print()
             if choice == 1:
@@ -26,4 +28,3 @@ while True:
                 x = read_int('Factorial of: ')
                 factorial(x)
             break
-    

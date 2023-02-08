@@ -35,6 +35,7 @@ def header(msg):
 
 def menu(dict):
     header('MENU')
+    lines30()
     for k, v in dict.items():
         print(f'{k} - {v}')
     lines30()
