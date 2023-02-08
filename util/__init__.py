@@ -11,6 +11,19 @@ def read_int(num_int):
         else:
             return num_int
 
+def read_float(num_float):
+    while True:
+        try:
+            num_float = float(input(num_float))
+        except ValueError:
+            print('ERROR!. Input a valid number!')
+            continue
+        except KeyboardInterrupt:
+            print('\nERROR! Interrupted by user!')
+            return 0
+        else:
+            return num_float
+
 def lines30():
     print('-' * 30)
 

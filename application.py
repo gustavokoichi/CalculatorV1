@@ -23,7 +23,7 @@ while True:
             if choice == 5:
                 power()
             if choice == 6:
-                x = int(input('Factorial of: '))
+                x = read_int('Factorial of: ')
                 factorial(x)
             break
     
